@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./css/style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Creepster&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Source+Code+Pro:ital,wght@0,200..900;1,200..900&display=swap"
+      rel="stylesheet"
+    />
+    <title>portafolio - valery movilla</title>
+  </head>
+  <body>
+    <!-- botón -->
+    <a href="#nav">
+    <div class="button-go-top">
+    	<img  class="go-top__image" src="./img/go-top__imagen.png" alt="go-top__image"/>
+      <img class="eyes" src="./img/eyes.gif" alt=""/>
+    </div>
+    </a>
+    <!-- hero section -->
+    <section id="hero" class="hero">
+      <header class="hero__header">
+        <div class="button-language">
+          <img class="world" src="./img/world.svg" alt=""/>
+          <img class="arrow" src="./img/arrow-down.svg" alt=""/>
+        </div>
+        <nav id="nav" class="nav">
+          <a href="#about">Sobre mí</a>
+          <a href="#projects">Proyectos</a>
+          <a href="#qa">Q&A</a>
+          <a class="button-primary" href="#contact">Contáctame</a>
+        </nav>
+      </header>
+      <div class="hero__content">
+        <h3 class="content__top">¡Bienvenido!, soy</h3>
+        <h1 class="bottom-tittle">Valery Movilla</h1>
+        <h3 class="bottom-subtittle">Diseño UX/UI - Diseño editorial</h3>
+      </div>
+    </section>
+    <!-- about section -->
+    <section id="about" class="about">
+		<div class="about__content">
+      <div class="content-left">
+        <div class="left__top">
+          <div class="top__tittle">
+            <h4 class="tittle-about">Sobre</h4>
+            <h4 class="tittle-me">Mí</h4>
+          </div>
+          <p class="info__text">
+            Soy estudiante de Diseño Gráfico apasionada por desarrollar
+            proyectos que no solo sean estéticamente atractivos, sino que
+            también cuenten historias y logren conectar con el público. Mi
+            enfoque es la creación de experiencias visuales impactantes y
+            funcionales que combina la investigación, creatividad y atención al
+            detalle para garantizar resultados funcionales y estéticamente
+            impactantes. Siempre busco aprender, innovar y superar expectativas
+            en cada proyecto que emprendo.
+          </p>
+        </div>
+        <div class="left__bottom">
+          <div class="skills-top">
+            <b class="skills-top__tittle">Programas que manejo</b>
+            <div class="top-programs">
+              <img src="./img/illustrator.png" alt="illustrator" />
+              <img src="./img/indesing.png" alt="indesing" />
+              <img src="./img/photoshop.png" alt="photoshop" />
+              <img src="./img/figma.png" alt="figma" />
+              <img src="./img/visual-studio.png" alt="visual studio" />
+            </div>
+          </div>
+          <div class="skills-center">
+            <b class="center__tittle">Aprendiendo a usar</b>
+            <div class="center-programs">
+              <img src="./img/lightroom.png" alt="lightroom" />
+              <img src="./img/after.png" alt="after" />
+              <img src="./img/autocad.png" alt="autocad" />
+            </div>
+          </div>
+          <div class="skills-bottom">
+            <div class="bottom-content">
+              <b class="content__tittle">Idiomas</b>
+              <div class="content-flags">
+                <img class="flag-left" src="./img/usa.png" alt="U.S.A flag" />
+                <img class="flag-right" src="./img/colombia.jpg" alt="colombian flag"/>
+              </div>
+            </div>
+            <div class="bottom-text">
+              <p class="text-left">B1</p>
+              <p class="text-right">Nativo</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="content-right">
+        <div class="right__button">
+          <b class="button-text">Descargar CV</b>
+        </div>
+        <div class="right__images">
+          <img class="image-top" src="./img/sobre-mi3.jpg" alt="" />
+          <img class="image-right" src="./img/sobre-mi2.jpg" alt="" />
+          <img class="image-left" src="./img/sobre-mi1.jpg" alt="" />
+        </div>
+			</div>
+      </div>
+    </section>
+    <!-- projects section -->
+    <section  id="projects" class="projects">
+      <h2 class="projects-video__title">Proyectos</h2>
+      <div class="projects-video">
+        <video src="./img/video.mp4" autoplay muted loop playsinline></video>
+      </div>
+			<div class="cards">
+        <div class="card-one" onclick="openModal('modal-ux')">
+          <div class="card-one-tittle">UX/UI</div>
+        </div>
+        <div class="card-two" onclick="openModal('modal-ilustraciones')">
+          <div class="card-two-tittle">Ilustraciones</div>
+        </div>
+        <div class="card-three" onclick="openModal('modal-editorial')">
+          <div class="card-three-tittle">Editorial</div>
+        </div>
+        <div class="card-four" onclick="openModal('modal-posters')">
+          <div class="card-four-tittle">Posters</div>
+        </div>
+        <div class="card-five" onclick="openModal('modal-html')">
+          <div class="card-five-tittle">HTML / CSS</div>
+        </div>
+			</div>
+
+      <!-- Modales -->
+      <div class="modal" id="modal-ux">
+        <div class="modal-content">
+          <span class="close" onclick="closeModal('modal-ux')">&times;</span>
+          <h2>UX/UI</h2>
+          <div class="modal-images">
+            <img src="./uxui/momiaviscos.png" alt="UX/UI 1">
+            <img src="./uxui/wireframes.png" alt="UX/UI 2">
+            <img src="./uxui/spotify.png" alt="UX/UI 3">
+            </div>
+        </div>
+      </div>
+      <div class="modal" id="modal-ilustraciones">
+        <div class="modal-content">
+          <span class="close" onclick="closeModal('modal-ilustraciones')">&times;</span>
+          <h2>Ilustraciones</h2>
+          <div class="modal-images">
+            <img src="./ilustraciones/pajaro.jpg" alt="Ilustración 1">
+            <img src="./ilustraciones/muelle-de-san-blas.jpg" alt="Ilustración 2">
+            <img src="./ilustraciones/autoretrato.jpg" alt="Ilustración 3">
+          </div>
+        </div>
+      </div>
+      <div class="modal" id="modal-editorial">
+        <div class="modal-content">
+          <span class="close" onclick="closeModal('modal-editorial')">&times;</span>
+          <h2>Editorial</h2>
+          <a href=" https://issuu.com/valenmore/docs/revista_final_valentina_valery_1" target="_blank">Revista mexico</a>
+          <a href=" https://issuu.com/valery.movilla/docs/obey" target="_blank">Revista Revista obey</a>
+          <a href="https://issuu.com/valery.movilla/docs/especimen_tipografico" target="_blank">Especimen tipográfico</a>
+          <div class="modal-images">
+            <img src="./editorial/revista.jpg" alt="editorial 1">
+            <img src="./editorial/obey.jpg" alt="editorial 2">
+            <img src="./editorial/montserrat.jpg" alt="editorial 3">
+          </div>
+        </div>
+      </div>
+      <div class="modal" id="modal-posters">
+        <div class="modal-content">
+          <span class="close" onclick="closeModal('modal-posters')">&times;</span>
+          <h2>posters</h2>
+          <a href=" https://www.behance.net/gallery/212532099/Retratos-tipograficos" target="_blank">Posters tipográficos</a>
+          <div class="modal-images">
+            <img src="./posters/Poster-louis.jpg" alt="posters 1">
+            <img src="./posters/Poster-Obey.jpg" alt="posters 2">
+            <img src="./posters/medellin.jpg" alt="posters 3">
+            <img src="./posters/lady-gaga.jpg" alt="posters 4">
+          </div>
+        </div>
+      </div>
+      <div class="modal" id="modal-html">
+        <div class="modal-content">
+          <span class="close" onclick="closeModal('modal-html')">&times;</span>
+          <h2>html/css</h2>
+          <div class="modal-images">
+            <img src="./web/web-cute.png" alt="html 1">
+            <img src="./web/pixel-art.png" alt="html 2">
+            <img src="./web/louis-card.png" alt="html 3">
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- section preguntas y respuestas -->
+    <section id="qa" class="qa">
+        <h4 class="qa-content__tittle">Q&A</h4>
+        <div class="content__info">
+            <!-- Pregunta 1 -->
+            <div class="qa-item">
+              <p class="qa-item__question">
+                ¿Qué otros tipos de servicios ofrezco?
+              </p>
+              <p class="qa-item__answer">
+                Publicidad, piezas para redes sociales, flyers, carteles, invitaciones y construcción de páginas web básicas.
+              </p>
+            </div>
+            <!-- Pregunta 2 -->
+            <div class="qa-item">
+              <p class="qa-item__question">
+                ¿Qué tan rápido entrego un proyecto?
+              </p>
+              <p class="qa-item__answer">
+                El tiempo de entrega puede variar dependiendo el proyecto y las necesidades que este requiera, pero siempre busco cumplir
+                con tus plazos, sin comprometer la calidad del trabajo.
+              </p>
+            </div>
+            <!-- Pregunta 3 -->
+            <div class="qa-item">
+              <p class="qa-item__question">¿Cómo es mi proceso de diseño?</p>
+              <p class="qa-item__answer">
+                Mi proceso de diseño es práctico y enfocado en la colaboración.
+                Empiezo con un briefing claro, seguido de bocetos y la iteración
+                continua hasta llegar al resultado final.
+              </p>
+            </div>
+            <!-- Pregunta 4 -->
+            <div class="qa-item">
+              <p class="qa-item__question">
+                ¿Qué me hace destacar de los demás?
+              </p>
+              <p class="qa-item__answer">
+                Me identifico por mi capacidad de adaptabilidad a cualquier estilo de diseño, lo que me permite abordar proyectos con enfoques diversos y ajustarme a las necesidades específicas de cada proyecto.
+              </p>
+            </div>
+        </div>
+    </section>
+    <!-- contact section -->
+    <section id="contact" class="contact">
+      <div class="contact__left">
+        <h4 class="left__tittle">Contáctame</h4>
+        <div class="left__content">
+          <p class="content-paragrahp">
+            Si estás interesado en mi trabajo, porfavor siéntete libre de
+            contactarme al siguiente correo electroónico
+            <span class="content-paragrahp__bold"
+              >valemovilla3412@gmail.com</span>estaré emocionada por saber más sobre ti y tu proyecto.
+          </p>
+          <!-- formulario -->
+          <form action="">
+            <input class="content__input-email" type="text" id="email" placeholder="email"
+            />
+            <ul class="content-list">
+              <li class="list-item">
+								<input type="checkbox" class="item-check-box" id="ux">
+								<label for="ux" class="item-text" >UX/UI</label>
+              </li>
+              <li class="list-item">
+                <input type="checkbox" class="item-check-box" id="posters">
+                <label for="posters" class="item-text">Posters</label>
+              </li>
+              <li class="list-item">
+                <input  type="checkbox" class="item-check-box" id="diseño-editorial">
+                <label for="diseño-editorial" class="item-text">Diseño editorial</label>
+              </li>
+              <li class="list-item">
+                <input type="checkbox" class="item-check-box" id="otro">
+                <label for="otro" class="item-text">Otro</label>
+              </li>
+            </ul>
+            <input
+              class="content__input"
+              type="text"
+              id="text"
+              placeholder="Escribe tu mensaje"
+            />
+            <button class="content-button">
+              <b class="button-text">Enviar</b>
+            </button>
+          </form>
+        </div>
+      </div>
+      <div class="contact__right">
+        <div class="triangle">
+          <div class="content__icons">
+            <img class="icon" src="./img/gmail.svg" alt="">
+            <img class="icon" src="./img/whatsapp.svg" alt="">
+            <img class="icon behance" src="./img/behance.svg" alt="">
+            <img class="icon" src="./img/linkedin.svg" alt="">
+          </div>
+        </div>
+      </div>
+    </section>
+    <script>
+      function openModal(modalId) {
+  document.getElementById(modalId).classList.add("show");
+}
+
+function closeModal(modalId) {
+  document.getElementById(modalId).classList.remove("show");
+}
+
+    </script>
+  </body>
+</html>
